@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+overflow-x:hidden;
+  position: relative;
+  vertical-align: baseline;
+background-color: #52a7c1;
+background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
+
+
+}
+
+.navbar{
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.logo img{
+	height: 50px;
+	width: auto; 
+}
+
+.navmenu {
+  list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+a:hover {
+    color: white;
+}
+
+.btn {
+ border-radius: 20px;
+ padding: 8px 30px;
+ font-size: 17px;
+ font-weight: 500;
+ background-color: white;
+ color: #20c997;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #007bff !important;
+}
+
+.image{
+    height: 250px;
+    width: auto;
+    margin: auto;
+    padding: 5px;
+    border: 2px dotted white;
+    border-radius: 150px;
+
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    text-align: center;
+    color: rgb(1, 1, 10);
+}
+
+.header h3 {
+    text-align: center;
+    color: rgb(1, 1, 10);
+}
+
+section {
+    margin-top: 30px;
+}
+
+.about {
+  background: #fff;
+  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
+  padding: 40px;
+  min-height: 330px;
+}
+
+.skills {
+  background: #007bff;
+  color: #f5f5f5;
+  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
+  padding: 40px;
+  min-height: 330px;
+  line-height: 15px;
+}
+
+.skills strong {
+  display: inline-block;
+  font-weight: normal;
+  padding-bottom: 6px;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+.education {
+  background: #007bff;
+  color: #f5f5f5;
+  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
+  padding: 40px;
+  min-height: 330px;
+}
+.education .education-content {
+  padding-bottom: 14px;
+}
+.education h5 {
+  display: inline-block;
+}
+.education span {
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+.languages {
+  background: #fff; 
+   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
+   padding: 40px;
+  min-height: 330px;
+}
+.languages ul {
+  padding: 10px;
+}
+.languages ul li {
+  padding-bottom: 6px;
+}
+
+footer {
+  color: #f9f9f9;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+  
+.contact {
+  background: #fff; 
+   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
+   padding: 40px;
+  min-height: 330px;   
+}
+.contact svg {
+  padding-right: 6px;
+}
+
+.social {
+    justify-content: center;
+}
+
+.social img{
+  height: 18px;
+  width: auto;
+  padding-right: 20px;
+}
+
+.social img:hover {
+  height: 30px;
+  width: auto;
+  transition: ease-in-out;
+}
+
+.experience {
+   background: #007bff;
+  color: #f5f5f5;
+  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
+  padding: 40px;
+  min-height: 330px;
+}
+ .experience-content {
+  padding-bottom: 14px;
+}
+.experience h5 {
+  display: inline-block;
+}
+.experience span {
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar1 {
+    display: block;
+    width: 15px;
+    height: 1px;
+    margin: 0;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.bar2 {
+    display: block;
+   width: 25px;
+    height: 1px;
+    margin: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white ;
+    
+}
+
+
+
+@media only screen and (max-width: 768px) {
+     .navmenu {
+    position: fixed;
+    height: 100%;
+    right: -100%;
+    top: 100px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .nav-item {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    margin-top: 1rem; 
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .navmenu.active {
+    right: 0;
+  }
+  
+.banner {
+  text-align: center;
+}
+
+.hamburger {
+
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar1 {
+      width: 25px;
+        transform: translateY(0.2rem) rotate(45deg);
+    }
+
+    .hamburger.active .bar2 {
+        transform: translateY(-0.5rem) rotate(-45deg);
+    }
+
+
+}
